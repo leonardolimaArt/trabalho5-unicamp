@@ -1,9 +1,11 @@
-options {
-    timestamps()
-}
+
 
 pipeline {
     agent any
+
+    options {
+        timestamps()
+    }
 
     environment {
         MVN_HOME = tool 'M3'
